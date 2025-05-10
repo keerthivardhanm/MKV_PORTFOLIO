@@ -1,0 +1,348 @@
+/* Additional Animations */
+
+/* Reveal animations for sections */
+.reveal {
+    position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Staggered animation for grid items */
+.stagger-item {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.stagger-item.show {
+    animation: staggerAnim 0.5s ease forwards;
+}
+
+@keyframes staggerAnim {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glowing border effect */
+.glow-border {
+    position: relative;
+}
+
+.glow-border::after {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 12px;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--primary-color));
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.3s ease;
+    animation: glowAnimation 3s linear infinite;
+}
+
+.glow-border:hover::after {
+    opacity: 1;
+}
+
+@keyframes glowAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Neon text effect */
+.neon-text {
+    color: var(--text-color);
+    text-shadow: 0 0 5px rgba(255,255,255,0.3),
+                 0 0 10px rgba(0,255,247,0.3),
+                 0 0 15px rgba(0,255,247,0.3),
+                 0 0 20px rgba(0,255,247,0.3);
+    transition: text-shadow 0.3s ease;
+}
+
+.neon-text:hover {
+    text-shadow: 0 0 5px rgba(255,255,255,0.5),
+                 0 0 10px rgba(0,255,247,0.5),
+                 0 0 15px rgba(0,255,247,0.5),
+                 0 0 20px rgba(0,255,247,0.5),
+                 0 0 30px rgba(0,255,247,0.5);
+}
+
+/* Rotating cube animation for loading */
+.cube-spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: spin 8s infinite linear;
+}
+
+.cube-spinner .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 2px solid var(--primary-color);
+    opacity: 0.7;
+}
+
+.cube-spinner .face-front {
+    transform: translateZ(20px);
+}
+
+.cube-spinner .face-back {
+    transform: rotateY(180deg) translateZ(20px);
+}
+
+.cube-spinner .face-right {
+    transform: rotateY(90deg) translateZ(20px);
+}
+
+.cube-spinner .face-left {
+    transform: rotateY(-90deg) translateZ(20px);
+}
+
+.cube-spinner .face-top {
+    transform: rotateX(90deg) translateZ(20px);
+}
+
+.cube-spinner .face-bottom {
+    transform: rotateX(-90deg) translateZ(20px);
+}
+
+@keyframes spin {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* Wave animation */
+.wave-animation {
+    position: relative;
+    overflow: hidden;
+}
+
+.wave-animation::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="%2300fff7" fill-opacity="0.2" d="M0,192L48,197.3C96,203,192,213,288,213.3C384,213,480,203,576,186.7C672,171,768,149,864,149.3C960,149,1056,171,1152,186.7C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>');
+    background-size: cover;
+    animation: wave 10s linear infinite;
+}
+
+@keyframes wave {
+    0% {
+        background-position-x: 0;
+    }
+    100% {
+        background-position-x: 1440px;
+    }
+}
+
+/* Typewriter cursor blink */
+.typewriter-cursor {
+    display: inline-block;
+    width: 2px;
+    height: 1.2em;
+    background-color: var(--primary-color);
+    margin-left: 2px;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+/* Floating animation */
+.float {
+    animation: floating 5s ease-in-out infinite;
+}
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Pulsating effect */
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 247, 0.7);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(0, 255, 247, 0);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 247, 0);
+    }
+}
+
+/* Matrix rain effect */
+.matrix-bg {
+    position: relative;
+    overflow: hidden;
+}
+
+.matrix-rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.matrix-drop {
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background-color: var(--primary-color);
+    opacity: 0.8;
+}
+
+/* Glass card hover effect */
+.glass-card {
+    position: relative;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transition: all 0.6s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.glass-card:hover::before {
+    left: 100%;
+}
+
+/* Image parallax effect */
+.parallax {
+    position: relative;
+    overflow: hidden;
+}
+
+.parallax-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transition: transform 0.2s ease-out;
+}
+
+/* Hover shake animation */
+.shake-on-hover:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Noise texture overlay */
+.noise {
+    position: relative;
+}
+
+.noise::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='a'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23a)' opacity='.1'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Highlight text animation */
+.highlight-text {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.highlight-text::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 30%;
+    background-color: rgba(0, 255, 247, 0.3);
+    z-index: -1;
+    transition: width 0.3s ease;
+}
+
+.highlight-text:hover::after {
+    width: 100%;
+}
