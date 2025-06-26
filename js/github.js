@@ -1,13 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
-            name: "Secure-Net",
-            description: "A comprehensive network security monitoring tool with real-time threat detection and visualization.",
-            type: "cyber",
-            technologies: ["Python", "Flask", "WebSockets", "TensorFlow"],
-            github: "https://github.com/keerthivardhanm/secure-net",
-            live: "https://keerthivardhanm.github.io/secure-net",
-            image: "https://images.pexels.com/photos/5380642/pexels-photo-5380642.jpeg?auto=compress&cs=tinysrgb&w=600"
+            name: "StreamHub",
+            description: "StreamHub is a fast, ad-free torrent video streaming application that allows users to instantly stream content directly from magnet links, torrent files, or direct video URLs — all from within their browser. Built with WebTorrent, Node.js, and Vite, it features real-time streaming, automatic video file detection, and a sleek dark-mode UI, delivering a seamless and fully local media experience with no tracking or third-party dependencies.",
+            type: "web",
+            technologies: ["WebTorrent", "Node.js", "Express", "Vite", "HTML5", "CSS3", "JavaScript"],
+            github: "https://github.com/keerthivardhanm/streamhub",
+            live: "no live preview availble local run only",
+            image: "https://imgs.search.brave.com/51c9hEjLPV5FfSjLKMVVlrTWwD5QqVbINMrYKI13xxA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDIv/ODc4LzEzMC9zbWFs/bC9zZWN1cnJpdHkt/bmV0d29yay1wYXNz/d29kLWRlY3J5cGlu/Zy1jeWJlci1zZWN1/cml0eS1wYXNzd29y/ZC1nbG9iYWwtb25s/aW5lLXRlY2hub2xv/Z3ktaW5mb3JtYXRp/b24tc2VjdXJpdHkt/c3lzdGVtLXBob3Rv/LmpwZw"
         },
         {
             name: "BulkGenAI Ultra",
