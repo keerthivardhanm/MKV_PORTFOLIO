@@ -411,7 +411,7 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
 
     // Open the resume file in a new window
-    window.open('https://drive.google.com/file/d/1435V97Zccs1gp2vOLtmWzsWnTULaZzu7/view?usp=sharing', '_blank');
+    window.open('https://drive.google.com/file/d/1RBzpHd8hhccT8lj8CnAQlK45ywrjRmn6/view?usp=sharing', '_blank');
  });
 
 });
