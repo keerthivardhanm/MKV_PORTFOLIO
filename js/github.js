@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+3document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             name: "StreamHub",
@@ -16,6 +16,15 @@ document.addEventListener('DOMContentLoaded', () => {
             github: "https://github.com/keerthivardhanm/projects/tree/19802c630876d35fd66c94442701d1baaa616c20/BulkGenAI-Ultra",
             live: "https://bulk-image-gen.vercel.app/",
             image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
+            name: "Anime Lens",
+            description: "An intelligent anime scene scanner that allows users to search and identify anime moments and episode details from screenshots.",
+            type: "web",
+            technologies: ["JavaScript", "React", "Node.js", "Trace.moe API"],
+            github: "https://github.com/keerthivardhanm/anime-lens",
+            live: "https://anime-lens-six.vercel.app/",
+            image: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg"
         },
         {
             name: "E-Commerce Platform",
