@@ -27,15 +27,6 @@
             image: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg"
         },
         {
-            name: "E-Commerce Platform",
-            description: "A fully responsive e-commerce website with secure payment integration and user authentication.",
-            type: "web",
-            technologies: ["JavaScript", "Node.js", "MongoDB", "Express"],
-            github: "https://github.com/keerthivardhanm/flipkart-verse-clone-app",
-            live: "https://flipkart-verse-clone-app.lovable.app",
-            image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
-        },
-        {
             name: "Password Manager",
             description: "A secure password management app with end-to-end encryption and cross-platform sync.",
             type: "cyber",
