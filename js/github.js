@@ -1,4 +1,4 @@
-3document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const projects = [
         {
             name: "StreamHub",
@@ -6,6 +6,7 @@
             type: "web",
             technologies: ["WebTorrent", "Node.js", "Express", "Vite", "HTML5", "CSS3", "JavaScript"],
             github: "https://github.com/keerthivardhanm/streamhub",
+            live: "no live preview availble local run only",
             image: "https://imgs.search.brave.com/51c9hEjLPV5FfSjLKMVVlrTWwD5QqVbINMrYKI13xxA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDIv/ODc4LzEzMC9zbWFs/bC9zZWN1cnJpdHkt/bmV0d29yay1wYXNz/d29kLWRlY3J5cGlu/Zy1jeWJlci1zZWN1/cml0eS1wYXNzd29y/ZC1nbG9iYWwtb25s/aW5lLXRlY2hub2xv/Z3ktaW5mb3JtYXRp/b24tc2VjdXJpdHkt/c3lzdGVtLXBob3Rv/LmpwZw"
         },
         {
@@ -18,13 +19,13 @@
             image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
-            name: "Anime Lens",
-            description: "An intelligent anime scene scanner that allows users to search and identify anime moments and episode details from screenshots.",
+            name: "E-Commerce Platform",
+            description: "A fully responsive e-commerce website with secure payment integration and user authentication.",
             type: "web",
-            technologies: ["JavaScript", "React", "Node.js", "Trace.moe API"],
-            github: "https://github.com/keerthivardhanm/anime-lens",
-            live: "https://anime-lens-six.vercel.app/",
-            image: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg"
+            technologies: ["JavaScript", "Node.js", "MongoDB", "Express"],
+            github: "https://github.com/keerthivardhanm/flipkart-verse-clone-app",
+            live: "https://flipkart-verse-clone-app.lovable.app",
+            image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
             name: "Password Manager",
