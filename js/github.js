@@ -19,6 +19,15 @@ document.addEventListener('DOMContentLoaded', () => {
             image: "https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=600"
         },
         {
+            name: "Anime Lens",
+            description: "An intelligent anime scene scanner that allows users to search and identify anime moments and episode details from screenshots.",
+            type: "web",
+            technologies: ["JavaScript", "React", "Node.js", "Trace.moe API"],
+            github: "https://github.com/keerthivardhanm/anime-lens",
+            live: "https://anime-lens-six.vercel.app",
+            image: "https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&w=600"
+        },
+        {
             name: "E-Commerce Platform",
             description: "A fully responsive e-commerce website with secure payment integration and user authentication.",
             type: "web",
