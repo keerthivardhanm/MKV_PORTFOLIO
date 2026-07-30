@@ -1,0 +1,83 @@
+Home (/)
+│
+├── Hero Section
+│   ├── Introduction
+│   ├── Professional Summary
+│   ├── Resume Download
+│   ├── Contact Buttons
+│   └── Social Links
+│
+├── About (/about)
+│   ├── Biography
+│   ├── Education
+│   ├── Career Objective
+│   ├── Technical Interests
+│   └── Personal Highlights
+│
+├── Skills (/skills)
+│   ├── Programming Languages
+│   ├── Frontend Development
+│   ├── Backend Development
+│   ├── AI & Machine Learning
+│   ├── Cybersecurity
+│   ├── Databases
+│   ├── Cloud & DevOps
+│   └── Development Tools
+│
+├── Experience (/experience)
+│   ├── Internships
+│   ├── Freelance Work
+│   ├── Leadership Roles
+│   └── Technical Contributions
+│
+├── Projects (/projects)
+│   ├── StreamHub
+│   ├── Anime Lens
+│   ├── HireAI Copilot
+│   ├── Mythri Health AI
+│   ├── CrowdSafe 360
+│   ├── Barcode Attendance ERP
+│   ├── AgentRoom AI
+│   └── Other Projects
+│
+├── Certifications (/certifications)
+│   ├── Cybersecurity
+│   ├── AI & ML
+│   ├── Cloud
+│   ├── Programming
+│   └── Workshops
+│
+├── Hackathons (/hackathons)
+│   ├── Smart India Hackathon
+│   ├── ICADT Hackathon
+│   ├── Anveshan
+│   └── Other Competitions
+│
+├── Research (/research)
+│   ├── Publications
+│   ├── Research Papers
+│   ├── AI Research
+│   └── Future Work
+│
+├── Achievements (/achievements)
+│   ├── Awards
+│   ├── Rankings
+│   ├── Competition Results
+│   └── Recognition
+│
+├── Resume (/resume)
+│   ├── Online Resume
+│   └── Download PDF
+│
+├── Contact (/contact)
+│   ├── Contact Form
+│   ├── Email
+│   ├── LinkedIn
+│   ├── GitHub
+│   └── Location
+│
+└── Footer
+    ├── Quick Links
+    ├── Social Media
+    ├── Copyright
+    └── Back to Top
